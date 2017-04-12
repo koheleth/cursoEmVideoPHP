@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="_css/estilo.css"/>
+  <meta charset="UTF-8"/>
+  <title>Curso de PHP - CursoemVideo.com</title>
+</head>
+<body>
+<div>
+    <?php
+        $n1 = $_GET["a"];
+        $n2 = $_GET["b"];
+        $s = $n1 + $n2;
+        $m = ($n1 + $n2) /2;
+
+        echo "<h2>Os valores recebidos são $n1 e $n2</h2>";
+        echo "$n1 somado com $n2 é igual a $s";
+        echo "<br>A soma vale ". ($n1+$n2);
+        echo "<br>A subtração vale ". ($n1-$n2);
+        echo "<br>A multiplicação vale ". ($n1*$n2);
+        echo "<br>A divisão vale ". ($n1/$n2);
+        echo "<br>A média vale ". ($m);
+
+    ?>
+</div>
+</body>
+</html>
